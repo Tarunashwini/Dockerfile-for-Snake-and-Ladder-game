@@ -1,0 +1,13 @@
+This document consists of commands that are tells how to pull and run the image
+
+sudo apt update
+
+sudo apt-get install docker.io
+
+sudo docker --version
+
+sudo docker pull tarunashwini/snake_and_ladder_game
+
+sudo docker images
+
+sudo docker run -it tarunashwini/snake_and_ladder_game

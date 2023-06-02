@@ -1,0 +1,28 @@
+This document consists of step by step process about how to create, build, and run the Dockerfile
+ 
+
+sudo apt-get update
+
+sudo apt-get install docker.io
+
+docker --version
+
+#Paste the Dockerfile at this step
+
+sudo docker build -t dockerfile .
+
+sudo docker images
+
+sudo docker run -it 26e051
+
+
+
++++++++++++
+
+COMMANDS TO PUSH THE DOCKERIMAGE TO DOCKERHUB
+
+sudo docker login -u YOUR-USER-NAME
+
+sudo docker tag dockerimage YOUR-USER-NAME/getting-started
+
+sudo docker push YOUR-USER-NAME/getting-started
