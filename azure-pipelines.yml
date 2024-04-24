@@ -1,0 +1,35 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- main
+
+resources:
+- repo: self
+
+variables:
+  tag: '$(Build.BuildId)'
+
+stages:
+- stage: Code_Build_Phase
+  jobs:
+  - job: Build
+    steps:
+    - bash: echo "Code Build Phase"
+
+- stage: Code_Deploy_Phase
+  jobs:
+  - job: Deploy
+    steps:
+    - bash: echo "Code Deploy Phase"
+
+- stage: Production_Phase
+  jobs:
+  - job: Production
+    steps:
+    - bash: echo "Code Production Phase"
+
+
+
+
