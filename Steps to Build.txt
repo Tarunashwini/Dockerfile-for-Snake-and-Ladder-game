@@ -13,7 +13,7 @@ sudo docker build -t dockerfile .
 
 sudo docker images
 
-sudo docker run -it 26e051
+sudo docker run -it <container_ID>
 
 
 
