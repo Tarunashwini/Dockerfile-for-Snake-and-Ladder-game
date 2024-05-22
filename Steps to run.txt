@@ -1,4 +1,4 @@
-This document consists of commands that are tells how to pull and run the image
+This document consists of commands that tells how to pull and run the image
 
 sudo apt update
 
