@@ -30,12 +30,7 @@ steps:
     tags: |
       $(Build.BuildId)
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/manifests'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    OverWrite: true
+
 
 - task: PublishBuildArtifacts@1
   inputs:
